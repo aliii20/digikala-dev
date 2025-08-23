@@ -1,0 +1,7 @@
+.discount {
+  &__content {
+    @include responsive(tablet) {
+      border-left: none !important;
+    }
+  }
+}

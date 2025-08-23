@@ -1,0 +1,18 @@
+.scroll {
+  &__content {
+    @include responsive(tablet) {
+      border-radius: 0 !important;
+    }
+    cursor: grab;
+    &-slide {
+      width: 18rem !important;
+      height: 28rem !important;
+      margin-left: 0.4rem;
+      &-text {
+        @include lineBreak();
+        color: $subtitle;
+        font-size: $fs-5;
+      }
+    }
+  }
+}

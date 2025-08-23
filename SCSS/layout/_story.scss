@@ -1,0 +1,31 @@
+.story {
+  cursor: grab;
+  &__item {
+    width: 8.5rem;
+    height: 8.5rem;
+    padding: 0.3rem;
+    @include responsive(phoneL) {
+      width: 9.5rem;
+      height: 9.5rem;
+    }
+  }
+  &__text {
+    max-width: 8.5rem;
+    @include lineBreak();
+  }
+  &__btn {
+    width: 4rem;
+    height: 4rem;
+    font-size: $fs-4;
+    background-color: $white;
+    color: $subtitle;
+    border-radius: 100%;
+    border: 1px solid $subtitle;
+    @include responsive(tablet) {
+      display: none;
+    }
+    &::after {
+      font-size: $fs-3;
+    }
+  }
+}

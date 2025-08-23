@@ -1,0 +1,14 @@
+.brands {
+  &__img {
+    max-width: 5rem;
+    @include responsive(tablet) {
+      max-width: 6rem;
+    }
+  }
+  &__break {
+    word-spacing: 9999px;
+    line-height: 1.5;
+    width: min-content;
+    text-align: center;
+  }
+}

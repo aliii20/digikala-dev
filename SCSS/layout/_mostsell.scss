@@ -1,0 +1,19 @@
+.mostsell {
+  cursor: grab;
+  &__item {
+    max-width: 10rem;
+  }
+  &__content {
+    @include responsive(tablet) {
+      border: none !important;
+    }
+    &-item {
+      min-width: 40rem !important;
+    }
+    &-text {
+      @include responsive(tablet) {
+        position: static;
+      }
+    }
+  }
+}

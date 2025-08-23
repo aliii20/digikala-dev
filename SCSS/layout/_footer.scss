@@ -1,0 +1,29 @@
+.footer {
+  @include responsive(tablet) {
+    display: none;
+  }
+  &__content {
+    &-email {
+      outline: none;
+    }
+    &-logo {
+      width: 4rem;
+    }
+    &-more {
+      width: 4rem;
+      height: 4rem;
+    }
+    &-namad {
+      width: 11rem;
+      height: 11rem;
+    }
+    &-text {
+      max-height: 14rem;
+      overflow: hidden;
+      line-height: 3rem;
+    }
+    &-title {
+      bottom: -4rem;
+    }
+  }
+}
